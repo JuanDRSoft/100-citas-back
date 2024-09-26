@@ -13,6 +13,7 @@ const newCita = async (req, res) => {
 
 const getCitas = async (req, res) => {
   const citas = await Cita.find()
+  console.log(citas)
   res.json(citas)
 }
 

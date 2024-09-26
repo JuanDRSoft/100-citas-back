@@ -1,8 +1,8 @@
 var express = require('express')
 var router = express.Router()
 
-const vacunaController = require('../controllers/citasController.js')
+const citasController = require('../controllers/citasController.js')
 
-router.route('/').post(vacunaController.newCita).get(vacunaController.getCitas)
+router.route('/').post(citasController.newCita).get(citasController.getCitas)
 
 module.exports = router

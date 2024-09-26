@@ -11,6 +11,10 @@ const CitaSchema = mongoose.Schema(
       type: String,
       required: false,
       trim: true
+    },
+    users: {
+      type: Array,
+      required: false
     }
   },
   {
